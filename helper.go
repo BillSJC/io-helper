@@ -8,15 +8,15 @@ import (
 )
 
 /*
-main func of helper
+@Helper: main func of helper
 */
 type Helper struct {
 	MaxByteLength uint
 }
 
 /*
-GetBytes
-Get data in reader without throw the buffer bu create a new Reader
+@Name:	GetBytes
+@Desc:	Get data in reader without throw the buffer bu create a new Reader
 @param:
 	r	*oi.Reader	input data
 @return:
@@ -35,8 +35,8 @@ func GetBytes(r *io.Reader) (data []byte, err error) {
 }
 
 /*
-GetBytesCloser
-Get data in readCloser without throw the buffer bu create a new readCloser
+@Name:	GetBytesCloser
+@Desc:	Get data in readCloser without throw the buffer bu create a new readCloser
 @param:
 	r	*oi.Reader	input data
 @return:
@@ -55,8 +55,8 @@ func GetBytesCloser(r *io.ReadCloser) (data []byte, err error) {
 }
 
 /*
-GetRequestPayload
-Get data in request payload
+@Name: 	GetRequestPayload
+@Desc:	Get data in request payload
 @param:
 	r	*oi.Reader	input data
 @return:
