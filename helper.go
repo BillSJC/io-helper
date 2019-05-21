@@ -1,4 +1,4 @@
-package io_helper
+package helper
 
 import (
 	"bytes"
