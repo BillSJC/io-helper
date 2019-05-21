@@ -7,15 +7,13 @@ import (
 	"net/http"
 )
 
-/*
-@Helper: main func of helper
-*/
+/* Helper: main func of helper
+ */
 type Helper struct {
 	MaxByteLength uint
 }
 
-/*
-@Name:	GetBytes
+/* GetBytes
 @Desc:	Get data in reader without throw the buffer bu create a new Reader
 @param:
 	r	*oi.Reader	input data
@@ -34,8 +32,7 @@ func GetBytes(r *io.Reader) (data []byte, err error) {
 	return b, nil
 }
 
-/*
-@Name:	GetBytesCloser
+/* GetBytesCloser
 @Desc:	Get data in readCloser without throw the buffer bu create a new readCloser
 @param:
 	r	*oi.Reader	input data
@@ -54,8 +51,7 @@ func GetBytesCloser(r *io.ReadCloser) (data []byte, err error) {
 	return b, nil
 }
 
-/*
-@Name: 	GetRequestPayload
+/* GetRequestPayload
 @Desc:	Get data in request payload
 @param:
 	r	*oi.Reader	input data
