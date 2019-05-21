@@ -1,15 +1,11 @@
 language: go
 
 go:
-  - 1.12.4
   - 1.12.5
+  - 1.12.4
 
-branches:
-  only:
-    - master
-
-before_install:
+script:
   - go test
 
-install:
-  - go test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
