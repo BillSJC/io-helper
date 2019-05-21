@@ -2,6 +2,9 @@
 
 An IO util to help use to reuse `io.Reader`
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/BillSJC/io-helper)](https://goreportcard.com/report/github.com/BillSJC/io-helper)
+[![Open Source Helpers](https://www.codetriage.com/billsjc/io-helper/badges/users.svg)](https://www.codetriage.com/billsjc/io-helper)
+
 ## Install
 
 ```bash

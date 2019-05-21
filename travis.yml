@@ -1,0 +1,12 @@
+language: go
+
+go:
+  - 1.12.4
+  - 1.12.5
+  - 1.11
+
+
+test:
+  - go test
+  on:
+    condition: $CODECOV_TOKEN="a79ec715-30da-493c-b65b-c38a8641d2db
