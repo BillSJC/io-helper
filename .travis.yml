@@ -10,10 +10,6 @@ branches:
 
 before_install:
   - go test
-  on:
-    condition: $CODECOV_TOKEN="a79ec715-30da-493c-b65b-c38a8641d2db
 
 install:
   - go test
-  on:
-    condition: $CODECOV_TOKEN="a79ec715-30da-493c-b65b-c38a8641d2db
