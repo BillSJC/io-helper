@@ -3,6 +3,7 @@
 An IO util to help use to reuse `io.Reader`
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/BillSJC/io-helper)](https://goreportcard.com/report/github.com/BillSJC/io-helper)
+[![codecov](https://codecov.io/gh/BillSJC/io-helper/branch/master/graph/badge.svg)](https://codecov.io/gh/BillSJC/io-helper)
 [![Build Status](https://travis-ci.com/BillSJC/io-helper.svg?branch=master)](https://travis-ci.com/BillSJC/io-helper)
 [![Open Source Helpers](https://www.codetriage.com/billsjc/io-helper/badges/users.svg)](https://www.codetriage.com/billsjc/io-helper)
 
