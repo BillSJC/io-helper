@@ -7,20 +7,12 @@ import (
 	"net/http"
 )
 
-/* Helper main struct of helper
- */
+// Helper main struct of helper=
 type Helper struct {
 	MaxByteLength uint
 }
 
-/* GetBytes Get data in reader without throw the buffer bu create a new Reader
-@param:
-	r	*oi.Reader	input data
-@return:
-	data	[]byte	data in reader
-	err		error
-
-*/
+// GetBytes Get data in reader without throw the buffer bu create a new Reader
 func GetBytes(r *io.Reader) (data []byte, err error) {
 	b, err := ioutil.ReadAll(*r)
 	if err != nil {
@@ -31,14 +23,7 @@ func GetBytes(r *io.Reader) (data []byte, err error) {
 	return b, nil
 }
 
-/* GetBytesCloser Get data in readCloser without throw the buffer bu create a new readCloser
-@param:
-	r	*oi.Reader	input data
-@return:
-	data	[]byte	data in reader
-	err		error
-
-*/
+// GetBytesCloser Get data in readCloser without throw the buffer bu create a new readCloser
 func GetBytesCloser(r *io.ReadCloser) (data []byte, err error) {
 	b, err := ioutil.ReadAll(*r)
 	if err != nil {
@@ -49,14 +34,7 @@ func GetBytesCloser(r *io.ReadCloser) (data []byte, err error) {
 	return b, nil
 }
 
-/* GetRequestPayload Get data in request payload
-@param:
-	r	*oi.Reader	input data
-@return:
-	data	[]byte	data in reader
-	err		error
-
-*/
+// GetRequestPayload Get data in request payload
 func GetRequestPayload(r *http.Request) (data []byte, err error) {
 	b, err := ioutil.ReadAll(r.Body)
 	if err != nil {

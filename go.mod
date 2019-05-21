@@ -1,3 +1,3 @@
-module io-helper
+module helper
 
 go 1.12
